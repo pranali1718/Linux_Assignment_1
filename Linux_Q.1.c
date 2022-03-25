@@ -13,12 +13,10 @@ int main()
 	int fd2  =  open("output.txt",O_RDWR, 777);	  
 	int len;
 	
-	//reading from input.txt
 	read(fd1, Rbuff, 200);
 	
 	printf("data read = %s\n",Rbuff);
 	
-	//writing to output.txt
 	len = write(fd2, Rbuff, 200);
 	
 	printf("Data Written = %d \n", len);
